@@ -1,0 +1,29 @@
+### Get all data
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJkb3J2ZWwiLCJlbWFpbCI6Im9raWRvcnZlbDQwNEBnbWFpbC5jb20iLCJpYXQiOjE2NTgzMzEyMTMsImV4cCI6MTY1ODMzMTIzM30.SuXDxv9vGm-jch31uh885Lzy7X4ml2UxY2THzqx-M6c
+
+### Register
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "name" : "dorvel",
+    "email" : "okidorvel404@gmail.com",
+    "password" : "password",
+    "confPassword" : "password"
+}
+
+### Login
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email" : "testing@mail.com",
+    "password" : "password"
+}
+
+### Refresh token
+GET http://localhost:5000/token
+
+### LOGOUT
+DELETE http://localhost:5000/logout
